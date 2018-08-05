@@ -3,23 +3,25 @@ from flask import Flask, render_template
 app = Flask(__name__)
 @app.route("/")
 def main():
+	
 	return render_template('index.html')
+
 if __name__ == "__main__":
 	app.run()
 
-
-'''response = requests.get(
-    #"https://www.eventbriteapi.com/v3/users/me/owned_events/",
-    #"https://www.eventbriteapi.com/v3/users/me/owned_events/?expand=organizer,venue",
-    "https://www.eventbriteapi.com/v3/events/search/",
-    headers = {
-        "Authorization": "Bearer DBOS3WZJP4SPLZV6F4BT",
-    },
-    verify = True,  # Verify SSL certificate
-)'''
 #print(response.json()['events'][0]['name']['text'])
 #print(response.json()['events'])
-
+'''
+	response = requests.get(
+		#"https://www.eventbriteapi.com/v3/users/me/owned_events/",
+	    #"https://www.eventbriteapi.com/v3/users/me/owned_events/?expand=organizer,venue",
+	    "https://www.eventbriteapi.com/v3/events/search/",
+	    headers = {
+	        "Authorization": "Bearer DBOS3WZJP4SPLZV6F4BT",
+	    },
+	    verify = True,  # Verify SSL certificate
+	)
+'''
 #should include key and url here
 '''
 Key: DBOS3WZJP4SPLZV6F4BT
