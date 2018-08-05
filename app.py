@@ -11,7 +11,7 @@ if __name__ == "__main__":
 
 #print(response.json()['events'][0]['name']['text'])
 #print(response.json()['events'])
-'''
+''' change
 	response = requests.get(
 		#"https://www.eventbriteapi.com/v3/users/me/owned_events/",
 	    #"https://www.eventbriteapi.com/v3/users/me/owned_events/?expand=organizer,venue",
